@@ -1,0 +1,220 @@
+body{
+  background-image: url("images/background.jpg");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header styling */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+  color: white;
+  height: 100px;
+}
+
+/* Logo */
+.logo {
+  width: 142px;
+  height: 120px;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Search box */
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: 9px 10px;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding-left: 5px;
+  font-size: 13px;
+}
+
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.search-icon{
+  width: 15px;
+  height: 15px;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 50px;
+}
+
+.priority-badge {
+  display: inline-block;
+  background: rgba(46, 204, 113, 0.6);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: absolute;
+  left: 33px;
+}
+
+.headline {
+  font-size: 2.5rem;
+  margin: 60px 0 30px;
+  margin-left: 10px;
+  line-height: 1.3;
+}
+
+.headline span {
+  color: #ffffff;
+  position: absolute;
+  left: 33px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #e8f4ff;
+  margin: 40px 0 20px;
+  position: absolute;
+  left: 33px;
+}
+.description span{
+  position: absolute;
+  left: 0;
+}
+
+.buttons {
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  position: absolute;
+  margin-top: 120px;
+  height: 23px;
+  width: 410px;
+  left: 33px;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 12px 28px;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #ff6b5a;
+  color: white;
+  padding-left: 25px;
+  padding-right: 53px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.right-arrow{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 180px;
+  bottom: 0;
+}
+
+.btn.primary:hover {
+  background: #ff4b36;
+}
+
+.btn.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background: white;
+  color: #084b7d;
+}
+
+.or {
+  font-weight: 500;
+  color: #cce7ff;
+  margin: 10px 10px;
+}
+
+.green-box{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: #2ECC71;
+  top: 440px;
+  left: 30px;
+}
+.clock{
+  margin-top: 22%;
+}
+.open-hours{
+  position: absolute;
+  font-size: small;
+  top: 440px;
+  left: 100px;
+}
+.week-hours{
+  position: absolute;
+  width: 200px;
+  left: 0;
+  top: 20px;
+}
+.week-end{
+  position: absolute;
+  width: 200px;
+  left: 0;
+  top: 45px;
+}
