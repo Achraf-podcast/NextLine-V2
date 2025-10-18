@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="shortcut icon" href="images/health-icon.png" type="image/x-icon">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="index.html"><img src="images/health-logo.png" alt="logo" class="logo"></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="services.html">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="search-box">
+      <img src="images/search-icon.svg" alt="search" class="search-icon">
+      <input type="text" placeholder="Search">
+    </div>
+  </header>
+
+  <section class="appointment-section">
+    <div class="appointment-container">
+      <div class="appointment-header">
+        <span class="badge-appointment">BOOK AN APPOINTMENT</span>
+      </div>
+
+      <h1 class="appointment-title">
+        Book Your Appointment by Filling in This Form Below
+      </h1>
+
+      <form action="#">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" value="mymail@|">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Input Email">
+          </div>
+
+          <div class="form-group">
+            <label for="doctor-type">Doctor Type</label>
+            <select id="doctor-type">
+              <option>Choose Doctor Type</option>
+              <option>Cardiologist</option>
+              <option>Dermatologist</option>
+              <option>General Practitioner</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="doctor-name">Doctor Name</label>
+            <select id="doctor-name">
+              <option>Choose Doctor Name</option>
+              <option>Dr. Smith</option>
+              <option>Dr. Jones</option>
+              <option>Dr. Williams</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Date</label>
+            <input type="text" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+          </div>
+
+          <div class="form-group">
+            <label>Time</label>
+            <input type="text" placeholder="Time" onfocus="(this.type='time')" onblur="(this.type='text')">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" rows="4">Hello world!</textarea>
+        </div>
+
+        <button type="submit" class="submit-send">
+          Send
+          <span class="material-icons">arrow_forward</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <section class="appointment-section">
+    <div class="appointment-container">
+      <div class="appointment-header">
+        <h1 class="badge-appointment">Ask your questions here below</h1>
+      </div>
+
+      <form action="#">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Name</label>
+            <input id="name2" type="text" value="mymail@|">
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input id="email2" type="email" placeholder="Input Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Question</label>
+          <textarea id="description2" rows="4">Ask your question</textarea>
+        </div>
+
+        <button type="submit" class="submit-send">
+          Send
+          <span class="material-icons">arrow_forward</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/health-logo.png" alt="logo" class="footer-logo">
+
+        <form class="subscribe-form">
+          <input type="email" placeholder="Email Address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <p class="footer-description">
+          Nullam ultrices lorem et augue placerat blandit. Nam nisl lacus, imperdiet quis dui pretium, pretium vehicula turpis. Fusce scelerisque fermentum lacinia.
+        </p>
+
+        <div class="social-icons">
+          <a href="#"><img src="images/whatsapp.svg" alt="whatsapp"></a>
+          <a href="#"><img src="images/facebook.svg" alt="facebook"></a>
+          <a href="#"><img src="images/instagram.svg" alt="instagram"></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer-column">
+        <h3>Work Category</h3>
+        <ul>
+          <li><a href="#">Architecture</a></li>
+          <li><a href="#">Nature</a></li>
+          <li><a href="#">Modelling</a></li>
+          <li><a href="#">Event</a></li>
+          <li><a href="#">Branding</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Services</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-location">
+        <h3>Location</h3>
+        <h4>Surabaya</h4>
+        <p>Jl. Danau Jonge 12, Mayjend<br>Sungkono, Surabaya</p>
+      </div>
+
+    </div>
+  </footer>
+  
+</body>
+</html>
