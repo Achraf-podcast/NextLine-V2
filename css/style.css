@@ -312,25 +312,6 @@ p {
 }
 
 /*-----------------------------------------*/
-.section1{
-  width: 100%;
-  height: 883px;
-  background-color: white;
-}
-.section1-content{
-  padding: 25px;
-}
-.section1 .img1{
-  width: 450px;
-  height: 276px;
-}
-.section1 .img2{
-  display: block;
-  width: 210px;
-  height: auto;
-  border-radius: 20px;
-}
-/*-----------------------------------------*/
 
 .about-section {
   padding: 4rem 1rem;
@@ -350,7 +331,6 @@ p {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* Images */
 .about-images {
   position: relative;
 }
@@ -437,7 +417,7 @@ p {
   border-bottom-right-radius: 0;
 }
 
-.about-text h1 {
+.about-text h2 {
   font-size: 2.25rem;
   font-weight: 700;
   color: #3498DB;
@@ -543,27 +523,43 @@ blockquote {
   color: #6b7280;
 }
 
-
 /*-----------------------------------------*/
 .footer {
+  position: relative;
   width: 100%;
   background-color: white;
-  padding: 3rem 1rem;
+  padding-top: 3rem;
   color: #374151;
 }
 
 .footer-container {
-  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
+.footer-left{
+  list-style: none;
+  padding: 0 0 0 2rem;
+  margin-bottom: 1.5rem;
+  margin-right: 9rem;
+  color: #63BBE9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-left a:hover {
+  color: #2563eb;
+}
+
+.footer-column{
+  width: 100px;
+  height: 230px;
+}
+
 .footer-column h3 {
   color: #2563eb;
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -579,6 +575,7 @@ blockquote {
 .footer-column a {
   color: #63BBE9;
   text-decoration: none;
+  font-size: 0.8rem;
   transition: color 0.3s ease;
 }
 
@@ -586,7 +583,6 @@ blockquote {
   color: #2563eb;
 }
 
-/* Logo */
 .footer-logo {
   width: 12rem;
   height: 12rem;
@@ -594,7 +590,6 @@ blockquote {
   border-radius: 0.75rem;
 }
 
-/* Subscribe form */
 .subscribe-form {
   display: flex;
   flex-direction: row;
@@ -631,14 +626,12 @@ blockquote {
   color: white;
 }
 
-/* Text */
 .footer-description {
   font-size: 0.875rem;
   color: #2563eb;
   margin-top: 1rem;
 }
 
-/* Social Icons */
 .social-icons {
   margin-top: 1rem;
   display: flex;
@@ -654,6 +647,22 @@ blockquote {
 .social-icons a:hover {
   color: #1e40af;
 }
+
+.footer-location{
+  width: 200px;
+  position: absolute;
+  left: 33.5rem;
+  top: 18rem;
+}
+.footer-location h4{
+  color: #2563eb;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+.footer-location p{
+  font-size: 0.8rem;
+  color: #969696;
+}
 /*-----------------------------------------------*/
 
 .services-section {
@@ -663,7 +672,6 @@ blockquote {
   text-align: center;
 }
 
-/* Header */
 .services-header {
   display: flex;
   flex-direction: column;
@@ -689,7 +697,7 @@ blockquote {
   flex-direction: column;
 }
 
-.header-text h1 {
+.header-text h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #3498DB;
@@ -714,7 +722,6 @@ blockquote {
   }
 }
 
-/* Services Grid */
 .services-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -734,7 +741,6 @@ blockquote {
   }
 }
 
-/* Service Card */
 .service-card {
   background: white;
   padding: 2rem;
@@ -858,7 +864,7 @@ blockquote {
 }
 
 
-.doctors-header h1 {
+.doctors-header h2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #3498DB;
@@ -1012,7 +1018,7 @@ blockquote {
   padding: 1.5rem 2rem 0 3rem;
 }
 
-.plans-title h1 {
+.plans-title h2 {
   font-size: 2.25rem;
   font-weight: 700;
   color: #3498DB;
